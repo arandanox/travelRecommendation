@@ -127,3 +127,234 @@ nav a {
   background-color: rgba(255, 255, 255, 0.25); /* un poco menos transparente al pasar */
   transform: scale(1.05); /* efecto de agrandarse ligeramente */
 }
+
+.about-content{
+ position: absolute;
+  top: 70px;           /* distancia desde arriba de la ventana */
+  bottom: 100px;        /* distancia desde abajo de la ventana */
+  left: 150px;          /* distancia desde la izquierda */
+  right: 120px;         /* distancia desde la derecha */
+  display: flex;
+  flex-direction: column; /* elementos de arriba hacia abajo */
+  justify-content: flex-start; /* los hijos se colocan arriba del bloque */
+  align-items: flex-start;     /* los hijos se alinean a la izquierda del bloque */
+  text-align: left;            /* el texto dentro de h1/p queda a la izquierda */
+  background-color: transparent;
+  color: white;
+  padding: 0;                  /* opcional, evita que haya espacio interno */
+  gap: 0px; /* espacio entre todos los elementos hijos (título, párrafo, etc.) */
+}
+.about-title{
+font-size: 2rem;                   /* tamaño grande */
+  font-family: 'Arial', sans-serif;  /* fuente legible y bonita */
+  font-weight: 700;                   /* hace la letra más gruesa */
+  color: white;                       /* letra blanca */
+  margin: 0; /* elimina márgenes predeterminados */
+  padding: 0; /* elimina padding si hubiera */
+
+}
+.about-text {
+  width: 95%;          /* ocupa el 80% del ancho del contenedor padre */
+
+  overflow: visible;       /* oculta texto que se salga */
+  padding: 10px;
+  box-sizing: border-box;
+  color: rgb(242, 238, 238);                       /* letra blanca */
+  background-color: rgba(10, 9, 9, 0.2); /* fondo casi transparente */
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.our-team-content {
+  height: 260px;                          /* altura del bloque */
+    width: 85%;                           /* ocupa todo el ancho del contenedor padre */
+
+  background-color: rgba(255, 255, 255, 0.2); /* fondo casi transparente */
+  border-radius: 8px;                     /* bordes redondeados */
+  padding: 10px;
+  box-sizing: border-box;
+  color: rgb(4, 4, 4);                    /* color del texto */
+  
+  /* desplazamiento desde la izquierda */
+  margin-left: 10%;        
+  margin-top: 50px;
+             
+  
+  /* opcional: centrar vertical dentro del contenedor si quieres */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact_container {
+  display: flex;           /* coloca hijos en fila */
+  justify-content: space-between; /* opcional, reparte espacio */
+  gap: 10px;               /* espacio entre izquierda y derecha */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+
+.inner-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente el contenido dentro del contenedor hijo */
+  align-items: flex-start; /* alinea el texto a la izquierda */
+  height: 500px;             /* puedes ajustar según cuánto quieras que ocupe de altura */
+  margin-left: 250px;
+}
+
+
+
+.contact-right-content {
+  width: 50%;      /* del 55% al 100% aproximadamente */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(40, 35, 35, 0.2);
+  border-radius: 8px;
+  box-sizing: border-box;
+  /* ya no usar position absolute */
+    margin-top: 160px; /* ajusta este valor según lo que necesites */
+
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;              /* borde gris clarito */
+  border-radius: 6px;                  /* bordes redondeados */
+  background-color: rgba(255,255,255,0.2); /* fondo casi transparente */
+  color: white;                        /* texto escrito */
+  box-sizing: border-box;              /* que respete padding y border */
+}
+
+input::placeholder {
+  color: rgba(255,255,255,0.6);        /* placeholder más suave */
+}
+#message-input{
+     padding: 10px;
+     height: 100px;
+  border: 1px solid #ccc;              /* borde gris clarito */
+  border-radius: 6px;                  /* bordes redondeados */
+  background-color: rgba(255,255,255,0.2); /* fondo casi transparente */
+  color: white;                        /* texto escrito */
+  box-sizing: border-box;              /* que respete padding y border */
+}
+#submit-btn {
+  padding: 10px;
+  border: 1px solid #ccc;              
+  border-radius: 6px;                  
+  background-color: rgba(255,255,255,0.2); 
+  color: white;                        
+  box-sizing: border-box;              
+  cursor: pointer;                     /* cambia el cursor al pasar por encima */
+  transition: all 0.3s ease;          /* transición suave */
+}
+
+/* efecto al pasar el ratón */
+#submit-btn:hover {
+  background-color: rgba(0, 123, 255, 0.8); /* azul brillante casi sólido */
+  color: white;                             /* letra blanca */
+  border-color: rgba(0, 123, 255, 1);      /* borde azul */
+  transform: scale(1.05);                   /* ligero aumento de tamaño */
+}
+
+
+#left-title h1 {
+  font-size: 4rem;                     /* letra grande */
+  font-weight: 700;                    /* letra gorda */
+  color: rgba(255, 255, 255, 9.85);   /* blanca pero ligeramente transparente */
+  margin: 0;                           /* elimina márgenes por defecto */
+  line-height: 1.9;                    /* ajusta altura de línea */
+  font-family: 'Arial', sans-serif;   /* fuente bonita y legible */
+}
+
+
+
+
+#text-left-content p {
+  font-size: 1.2rem;          /* tamaño legible */
+  font-weight: 400;            /* normal */
+  color: white;                /* completamente blanco */
+  margin: 0;                   /* elimina márgenes por defecto */
+  line-height: 1.4;            /* altura de línea cómoda */
+  font-family: 'Arial', sans-serif; /* misma fuente que el título */
+}
+
+#destination-input {
+  border-radius: 20px;          /* bordes redondeados */
+  background-color: white;      /* fondo blanco */
+  border: 1px solid #ccc;       /* borde gris clarito */
+  padding: 8px 15px;            /* espacio interno */
+  font-size: 1rem;              /* tamaño de letra */
+  outline: none;                /* quita el borde azul al enfocar */
+  box-sizing: border-box;       /* respeta padding y border */
+    color: black;                 /* texto que se escriba en negro */
+
+ width: 350px;
+}
+
+
+
+#search-results {
+  display: none;                /* oculto por defecto */
+  margin: 0;                     /* sin márgenes */
+  border: none;                  /* sin borde */
+  border-radius: 0;              /* sin esquinas redondeadas */
+  background: transparent;       /* fondo totalmente transparente */
+  position: absolute;            /* relativo al body */
+  top: 60px;                     /* ajustar según la altura de tu header */
+  left: 60%;                     /* empieza desde el 60% del viewport */
+  width: 40%;                     /* ocupa del 60% al 100% */
+  bottom: 0;                      /* llega hasta abajo del body */
+  overflow-y: auto;              /* scroll si hay mucho contenido */
+  z-index: 1000;                 /* encima de otros elementos */
+}
+
+
+#search-results.active {
+  display: block; /* visible cuando hay resultados */
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* vertical, imagen arriba, texto debajo */
+
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  margin: 20px;
+}
+
+.result-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.result-text h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #363333;
+}
+
+.result-text p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.result-text {
+  background: #fff;          /* fondo blanco */
+  padding: 10px;             /* espacio dentro del box */
+  margin-top: 10px;          /* espacio con la imagen de arriba */
+  margin-bottom: 10px;       /* espacio con el siguiente elemento */
+  border-radius: 5px;        /* opcional, bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* opcional, sombra */
+    width: 100%;                        /* ocupa todo el ancho disponible */
+
+}

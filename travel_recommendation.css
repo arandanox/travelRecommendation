@@ -1,0 +1,129 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #476d4b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+  background: linear-gradient(to right, rgba(71, 109, 75, 0.95), rgba(71, 109, 75, 0)); 
+
+}
+body {
+  margin: 0;
+  padding-top: 5%; /* para que el contenido no quede debajo del header */
+  background-image: url("img/fondo.avif"); /* ruta de tu imagen */
+  background-repeat: no-repeat;           /* evita que se repita */
+  background-size: cover;                 /* ocupa todo el espacio del body */
+  background-position: center;            /* centra la imagen */
+  min-height: 100vh; /* asegura que el body ocupe toda la altura de la ventana */
+
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.right-section {
+  display: flex;          /* activa flexbox en la sección */
+  align-items: center;    /* centra verticalmente input y botones */
+  gap: 10px;              /* espacio entre todos los elementos dentro */
+  margin-right: 40px; /* deja 20px de espacio a la derecha del contenedor */
+
+}
+.left-section {
+  display: flex;          /* activa flexbox en la sección */
+  align-items: center;    /* centra verticalmente input y botones */
+  gap: 10px;              /* espacio entre todos los elementos dentro */
+  margin-left: 40px; /* deja 20px de espacio a la derecha del contenedor */
+
+}
+.logo {
+  height: 90px; /* ajusta según tu header */
+
+}
+.sidebar {
+  position: fixed;
+  top: 80px; /* altura del header */
+  left: 0;
+  width: 80px;
+  height: calc(100vh - 80px); /* ocupa toda la altura menos el header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.line {
+  width: 3px;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 60px;
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin-top: auto; /* empuja los iconos hacia abajo */
+  padding-bottom: 50px;  /* separa del final de la sidebar */
+
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: rgba(218, 1, 1, 0.25); /* un poco menos transparente al pasar */
+  transform: scale(1.15); /* efecto de agrandarse ligeramente */
+}
+
+.main-content {
+  position: absolute;
+  top: 70px;           /* distancia desde arriba de la ventana */
+  bottom: 100px;        /* distancia desde abajo de la ventana */
+  left: 150px;          /* distancia desde la izquierda */
+  right: 800px;         /* distancia desde la derecha */
+  display: flex;
+  flex-direction: column; /* elementos de arriba hacia abajo */
+  justify-content: flex-start; /* los hijos se colocan arriba del bloque */
+  align-items: flex-start;     /* los hijos se alinean a la izquierda del bloque */
+  text-align: left;            /* el texto dentro de h1/p queda a la izquierda */
+  background-color: transparent;
+  color: white;
+  padding: 0;                  /* opcional, evita que haya espacio interno */
+  gap: 0px; /* espacio entre todos los elementos hijos (título, párrafo, etc.) */
+
+}
+.main-title {
+  font-size: 2rem;                   /* tamaño grande */
+  font-family: 'Arial', sans-serif;  /* fuente legible y bonita */
+  font-weight: 700;                   /* hace la letra más gruesa */
+  color: white;                       /* letra blanca */
+}
+.main-text {
+  font-size: 1rem;
+  line-height: 1.3;
+  color: white;
+  max-width: 62%;  /* ocupa como máximo la mitad del contenedor */
+  word-wrap: break-word; /* asegura que las palabras largas se rompan */
+}
+#btn-book-now {
+  background-color: rgba(255, 255, 255, 0.1); /* cuadrado casi transparente */
+  color: white; /* letras en blanco */
+  font-size: 1.2rem; /* un pelín más grandes */
+  padding: 12px 24px; /* hace el cuadrado más grande */
+  border: 2px solid white; /* borde blanco para que resalte */
+  border-radius: 8px; /* esquinas un poco redondeadas */
+  cursor: pointer; /* cambia el cursor al pasar */
+  transition: all 0.3s ease; /* animación suave */
+}
+#btn-book-now:hover {
+  background-color: rgba(255, 255, 255, 0.25); /* un poco menos transparente al pasar */
+  transform: scale(1.05); /* efecto de agrandarse ligeramente */
+}
